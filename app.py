@@ -34,7 +34,7 @@ st.markdown("""
 def load_blood_group_model():
     """Load the trained model with caching"""
     try:
-        model_path = r"C:\blood group detection\bloodgroup_cnn_model.h5"
+        model_path = "models/bloodgroup_cnn_model.h5"
         if not os.path.exists(model_path):
             st.error(f"Model file not found at: {model_path}")
             return None
@@ -143,3 +143,4 @@ else:
 # Add footer
 st.markdown("---")
 st.markdown("**Disclaimer:** This tool is for demonstration purposes only. Always consult medical professionals for accurate blood group testing.")
+
